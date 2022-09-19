@@ -1,6 +1,9 @@
 
 import { useForm } from 'react-hook-form';
 import { Layout } from '../../App/Layout/Layout';
+import { useAuth } from '../../App/Auth/Auth';
+import { useState } from 'react';
+import axios from 'axios';
 
 // Function Component til "Login"
 export const Login = () => {

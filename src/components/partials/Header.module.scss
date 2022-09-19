@@ -1,0 +1,15 @@
+@import "../../Assets/Styles/Bundle.scss";
+
+.headerContainer {
+    height: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 15% 1fr;
+    gap: 20%;
+    font-family: $twFont;
+    margin-bottom: 5%;
+
+    img {
+        width: 100%;
+    }
+}

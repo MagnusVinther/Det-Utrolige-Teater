@@ -1,0 +1,28 @@
+@import "../../Assets/Styles/Bundle.scss";
+
+.footerContainer {
+    // width: 100%;
+    background: $thirdColor;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 20%;
+    padding: 3%;
+    color: white;
+    font-family: $twFont;
+    line-height: 1;
+
+    p {
+        line-height: .5;
+    }
+
+    h2 {
+        text-transform: uppercase;
+        font-size: 2.5vh;
+
+    }
+
+    svg {
+        height: 5vh;
+        width: 30%;
+        margin-top: 10%;
+    }
+}

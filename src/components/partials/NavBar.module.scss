@@ -1,0 +1,34 @@
+@import "../../Assets/Styles/Bundle.scss";
+
+
+.navContainer {
+    display: flex;
+    justify-content: flex-end;
+    
+    ul {
+        display: flex;
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        justify-content: space-around;
+        
+        li {
+            display: flex;
+            flex-direction: column-reverse;
+            list-style: none;
+            
+            a {
+                color: $mainColor;
+                text-transform: uppercase;
+                font-size: 2vh;
+                text-decoration: none;
+
+                &:active {
+                    text-decoration: underline;
+                    color: black;
+                }
+                
+            }
+        }
+    }
+}

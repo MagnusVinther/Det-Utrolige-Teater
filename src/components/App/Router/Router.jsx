@@ -2,6 +2,7 @@
 import { Routes, Route } from 'react-router-dom'
 
 // Pages og komponenter
+import { Home } from "../../Pages/Home/Home"
 import { Content } from '../../Pages/Content/Content'
 import { ContentDetails } from '../../Pages/Content/ContentDetails'
 import { ContentList } from '../../Pages/Content/ContentList'
@@ -15,7 +16,7 @@ export const AppRouter = () => {
         <Routes>
             <Route index element={<Home />}></Route>
             {/* Content er igen en placeholder for en side hvori der skal laves api kald */}
-            <Route path='/content'>
+            {/* <Route path='/content'>
                 <Route index element={<Content />}></Route>
                 <Route path='*1'>
                     <Route index element={<ContentList />}></Route>
@@ -24,7 +25,7 @@ export const AppRouter = () => {
             </Route>
             <Route path='/login' element={<Login />}></Route>
             <Route path='/admin' element={<AdminPage />}></Route>
-            <Route path="/admin/:comment_id" element={<AdminControl />}></Route>
+            <Route path="/admin/:comment_id" element={<AdminControl />}></Route> */}
         </Routes>
     )
 }
