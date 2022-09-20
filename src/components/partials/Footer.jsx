@@ -7,39 +7,39 @@ export const Footer = () => {
       <footer className={Styles.footerContainer}>
         <div>
           <h2>Adresse</h2>
-          <p>Det Utrolige Teater</p>
-          <p>Havnegade 901</p>
-          <p>9000 Aalborg</p>
-          <p>EAN 5798003279845</p>
-          <p>CVR 1001 0012</p> <br />
-          <p>Find vej på kort</p>
+          <p><a href="#">Det Utrolige Teater</a></p>
+          <p><a href="#">Havnegade 901</a></p>
+          <p><a href="#">9000 Aalborg</a></p>
+          <p><a href="#">EAN 5798003279845</a></p>
+          <p><a href="#">CVR 1001 0012</a></p> <br />
+          <p><a href="#">Find vej på kort</a></p>
         </div>
 
         <div>
           <h2>billetservice</h2>
-          <p>Se åbningstider</p>
-          <p>Billettelefon: +45 96 31 80 80</p>
-          <p>billet@dut.dk</p> 
+          <p><a href="#">Se åbningstider</a></p>
+          <p><a href="#">Billettelefon: +45 96 31 80 80</a></p>
+          <p><a href="#">billet@dut.dk</a></p> 
           <br /><br /><br />
           <h2>administration</h2>
-          <p>Telefon: +45 96 31 80 90</p>
-          <p>adm@dut.dk</p>
+          <p><a href="#">Telefon: +45 96 31 80 90</a></p>
+          <p><a href="#">adm@dut.dk</a></p>
         </div>
 
         <div>
           <h2>praktisk info</h2> 
-          <p>Kontakt</p> 
-          <p>Kom trygt i teatret</p> 
-          <p>Presseside</p> 
-          <p>Skoleforestillinger</p> 
-          <p>Teatercaféen</p> 
-          <p>Handlesbetingelser</p> 
+          <p><a href="#">Kontakt</a></p> 
+          <p><a href="#">Kom trygt i teatret</a></p> 
+          <p><a href="#">Presseside</a></p> 
+          <p><a href="#">Skoleforestillinger</a></p> 
+          <p><a href="#">Teatercaféen</a></p> 
+          <p><a href="#">Handlesbetingelser</a></p> 
         </div>
 
         <div>
-         <FaFacebookSquare />
-         <FaInstagramSquare />
-         <FaLinkedin />
+         <a href="#"><FaFacebookSquare /></a>
+         <a href="#"><FaInstagramSquare /></a>
+         <a href="#"><FaLinkedin /></a>
         </div>
 
       </footer>

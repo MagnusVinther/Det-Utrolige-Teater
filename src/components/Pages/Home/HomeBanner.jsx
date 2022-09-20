@@ -47,11 +47,15 @@ export const HomeBanner = () => {
                         <figcaption>
                             <article>
                                 {/* inline-styling */}
-                                <p style={{color: '#808080'}}>{item.stage_name}</p>
-                                <b >{item.startdate} - {item.stopdate}</b>
-                                <hr />
-                                <h2>{item.title}</h2>
-                                <p style={{color: '#707070', fontSize: '2rem'}}>{item.genre}</p>
+                                <div>
+                                    <p style={{color: '#808080'}}>{item.stage_name}</p>
+                                    <b >{item.startdate} - {item.stopdate}</b>
+                                    <hr />
+                                </div>
+                                <div>
+                                    <h2>{item.title}</h2>
+                                    <p style={{color: '#707070', fontSize: '2rem'}}>{item.genre}</p>
+                                </div>
                             </article>
                         </figcaption>
                         <img src={item.image} alt={item.title} loading="lazy" />

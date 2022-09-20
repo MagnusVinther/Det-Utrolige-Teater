@@ -9,9 +9,19 @@
     color: white;
     font-family: $twFont;
     line-height: 1;
+    margin-bottom: -1rem;
 
     p {
         line-height: .5;
+    }
+
+    a {
+        color: white;
+        text-decoration: none;
+
+        &:hover {
+            text-decoration: underline;
+        }
     }
 
     h2 {

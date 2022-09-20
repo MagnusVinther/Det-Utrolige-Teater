@@ -7,3 +7,9 @@
 @mixin nl2br {
     white-space: pre-wrap;
 }
+
+@mixin btnCards {
+    border: none;
+    color: white;
+    height: 2.2rem;
+}
