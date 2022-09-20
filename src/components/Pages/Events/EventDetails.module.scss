@@ -1,0 +1,80 @@
+@import "../../../Assets/Styles/Bundle.scss";
+
+.sectionEventDetails {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 3rem;
+    font-family: $twFont;
+    box-sizing: border-box;
+    
+    h1 {
+        font-family: $pfFont;
+        font-size: 3vw;
+        margin: .5em 0;
+        color: $mainColor;
+        margin-bottom: 0;
+        text-transform: capitalize;
+        
+    }
+    h2 {
+        line-height: 1;
+        margin-top: 0;
+        font-weight: 300;
+        color: $greyFont;
+        text-transform: uppercase;
+    }
+    h3 {
+        text-transform: uppercase;
+        color: $greyFont;
+        font-weight: 300;
+        font-size: 2vw;
+        margin-bottom: .5em;
+    }
+
+    .heroImg {
+        border: $secondColor solid 10px;
+        outline: 1em;
+    }
+
+    figure {
+        width: 100%;
+        margin: 0;
+        border: 2px solid $secondColor;
+    
+        img {
+            width: 100%;
+        }
+    
+        figcaption {
+            padding: 2%;
+        }
+    }
+
+    .articleHeader {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        text-transform: uppercase;
+        color: $greyFont;
+
+        b {
+            margin: auto 0;
+            font-weight: 400;
+            font-size: 2vw;
+        }
+
+        h3, h4 {
+            margin: 0;
+            line-height: 1;
+        }
+
+        h3 {
+            font-size: 2vw;
+
+        }
+        h4 {
+            font-weight: 500;
+        }
+    }
+
+}

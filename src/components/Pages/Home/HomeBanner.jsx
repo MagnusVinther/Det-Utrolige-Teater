@@ -7,6 +7,7 @@ import axios from "axios"
 
 // Styles
 import Styles from "./HomeBanner.module.scss"
+import { Link } from 'react-router-dom'
 
 // Function Component til Home banner
 export const HomeBanner = () => {
@@ -23,6 +24,7 @@ export const HomeBanner = () => {
                 const result = await axios.get('https://api.mediehuset.net/detutroligeteater/events?limit=1')
                 // setter data tilstand.
                 setData(result.data.items)
+                console.log(result.data.items.startdate)
             } 
             catch (err) {
                 console.log(err)
@@ -34,6 +36,20 @@ export const HomeBanner = () => {
         getData()
     // Dependancy array til at fortælle hvilke forandringer der skal lave en rendering.
     }, [setData])
+
+    // Funktion til at omskrive startdate / stopdate
+    // function dateConverter(item) {
+    //     const newDate = new Date
+    // }
+    // function formatDate(string) {
+    //     const options = {
+    //         year: 'numeric',
+    //         month: 'long',
+    //         day: 'numeric'
+    //     }
+    //     return new Date(string).toLocaleDateString([], options)
+    // }
+
 
     // Returnering i DOM
     return (
@@ -58,7 +74,9 @@ export const HomeBanner = () => {
                                 </div>
                             </article>
                         </figcaption>
-                        <img src={item.image} alt={item.title} loading="lazy" />
+                        <Link to={`/events/${item.id}`}>
+                            <img src={item.image} alt={item.title} loading="lazy" />
+                        </Link>
                     </figure>
                 )
             })}

@@ -21,9 +21,6 @@ const Layout = props => {
     return (
         //React fragment som top-level element
         <>
-            <h1>
-                {props.title}
-            </h1>
             <section>
                 {/* indsætter fremover descendants/children i tilhørende placering */}
                 {props.children}

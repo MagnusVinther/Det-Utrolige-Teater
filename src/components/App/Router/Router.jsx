@@ -3,6 +3,8 @@ import { Routes, Route } from 'react-router-dom'
 
 // Pages og komponenter
 import { Home } from "../../Pages/Home/Home"
+import { Events } from "../../Pages/Events/Events"
+import { EventDetails } from '../../Pages/Events/EventDetails'
 import { Content } from '../../Pages/Content/Content'
 import { ContentDetails } from '../../Pages/Content/ContentDetails'
 import { ContentList } from '../../Pages/Content/ContentList'
@@ -15,6 +17,11 @@ export const AppRouter = () => {
     return (
         <Routes>
             <Route index element={<Home />}></Route>
+            <Route path="/events">
+                <Route index element={<Events />}></Route>
+                <Route path=":event_id" element={<EventDetails />}></Route>
+            </Route>
+
             {/* Content er igen en placeholder for en side hvori der skal laves api kald */}
             {/* <Route path='/content'>
                 <Route index element={<Content />}></Route>

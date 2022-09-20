@@ -5,6 +5,9 @@ import axios from "axios"
 // Hooks
 import { useEffect, useState } from "react"
 
+//Routing
+import { Link } from "react-router-dom"
+
 // Styles
 import Styles from "./HomeCards.module.scss"
 
@@ -18,7 +21,7 @@ export const HomeCards = () => {
         // Finder data i en asynkron funktion
         const getData = async () => {
             // Variable med resultat fra fetch med get-metode. (afventer, da den er asynkron.). Skal bruge 3 cards, så sætter limit til 3 i query-params
-            const result = await axios.get('https://api.mediehuset.net/detutroligeteater/events?limit=3')
+            const result = await axios.get('https://api.mediehuset.net/detutroligeteater/events?orderby=rand()')
             // Setter data fra udtræk i api.
             setData(result.data.items)
         }
@@ -30,9 +33,10 @@ export const HomeCards = () => {
     // returnering i DOM
 
     return (
+        <>
         <section className={Styles.sectionCards}>
-            {/* mapper data */}
-            {data && data.map((item) => {
+            {/* mapper data, slicer får at vise 3 items */}
+            {data && data.slice(0, 3).map((item) => {
                 return (
                     <figure key={item.id}>
                         <img src={item.image} alt={item.title} />
@@ -48,15 +52,20 @@ export const HomeCards = () => {
                                     <p style={{color: '#808080'}}>{item.genre}</p>
                                 </div>
                                 <div className={Styles.btnContainer}>
-                                    <button className={Styles.btnRead}>LÆS MERE</button>
-                                    <button className={Styles.btnBuy}>KØB BILLET</button>
+                                    <button className={Styles.btnRead}><Link to={`/events/${item.id}`}>læs mere</Link></button>
+                                    <button className={Styles.btnBuy}>køb billet</button>
                                 </div>
                             </article>
                         </figcaption>
                     </figure>
                 )
             })}
+            
 
         </section>
+        <div className={Styles.goBtn}>
+            <button ><Link to={'/events'}>Se alle forestillinger</Link></button>
+        </div>
+        </>
     )
 }
