@@ -1,0 +1,51 @@
+@import "../../../Assets/Styles/Bundle.scss";
+
+.formContainer {
+    height: 100%;
+    width: 100%;
+    font-family: $twFont;
+
+    h1 {
+        font-family: $pfFont;
+        font-weight: 300;
+        font-size: 3vw;
+        color: $mainColor;
+    }
+
+    form {
+        outline: .2em solid $mainColor;
+        margin-bottom: 3vw;
+        padding: 2%;
+
+    }
+
+    button {
+        margin-top: 1em;
+        width: 8vw;
+        @include btnCards;
+        background-color: $thirdColor;
+    }
+
+    .logOutBtn {
+        margin-bottom: 1em;
+    }
+
+    .formInput {
+        font-size: 1.5vw;
+        padding: .7%;
+
+    }
+
+    b {
+        text-transform: capitalize;
+    }
+}
+.errorMessage {
+    color: red;
+    margin-left: 1em;
+    
+}
+#username, #password {
+    font-size: 1.3vw;
+}
+

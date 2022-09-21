@@ -1,0 +1,55 @@
+@import "../../../Assets/Styles/Bundle.scss";
+
+.ActorDataContainer {
+
+    h1 {
+        padding-left: 1%;
+        font-size: 4vw;
+        font-family: $pfFont;
+        font-weight: 300;
+        color: $mainColor;
+        margin-bottom: 1%;
+    }
+
+    article {
+        border: 2px solid $mainColor;
+
+        
+        figure {
+            margin: 0;
+            padding: 1%;
+            display: grid;
+            grid-template-columns: 30% auto;
+
+            h2 {
+                font-family: $twFont;
+                color: $greyFont;
+                font-weight: 300;
+                font-size: 3vw;
+                line-height: 1;
+                margin: 0;
+            }
+            
+            img {
+                width: 100%;
+            }
+            
+            figcaption {
+                margin-bottom: 4em;
+                padding: 0 3%;
+    
+                p {
+                    @include nl2br;
+                    color: $mainColor;
+                    font-family: $twFont;
+                    font-size: 1.7vw;
+                }
+            }
+            
+        }
+    }
+
+    .goBtn {
+        @include goBtn;
+    }
+}

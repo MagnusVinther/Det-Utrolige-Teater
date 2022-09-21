@@ -9,7 +9,7 @@ export const NavBar = () => {
 			<ul>
 				<li><NavLink to="/">Forside</NavLink></li>
 				<li><NavLink to="/events">Forestillinger &amp; Events</NavLink></li>
-				<li><NavLink to="/skuespillere">Skuespillere</NavLink></li>
+				<li><NavLink to="/actors">Skuespillere</NavLink></li>
 				<li><NavLink to="/login">Login</NavLink></li>
 			</ul>
 		</nav>

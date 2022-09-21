@@ -11,7 +11,7 @@
     .actorCard {
         display: flex;
         flex-direction: column;
-        
+        outline: .15em $secondColor solid;
         width: 10vw;
         
         figcaption {
@@ -32,6 +32,8 @@
 
         img {
             width: 100%;
+            outline: .2em solid $secondColor;
+            outline-offset: -.1em;
         }
     }
 }

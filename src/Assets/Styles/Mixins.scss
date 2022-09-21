@@ -8,6 +8,31 @@
     white-space: pre-wrap;
 }
 
+@mixin goBtn {
+    display: flex;
+    justify-content: flex-end;
+    margin: 0;
+    margin-bottom: 3em;
+    height: 100%;
+
+    button {
+        background-color: $mainColor;
+        @include btnCards;
+        margin-top: 1em;
+        
+        a {
+            color: white;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 2vh;
+            padding: .5em;
+            text-transform: uppercase;
+
+        }
+    }   
+
+}
+
 @mixin btnCards {
     border: none;
     color: white;

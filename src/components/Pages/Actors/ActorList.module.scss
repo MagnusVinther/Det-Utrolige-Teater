@@ -1,0 +1,51 @@
+@import "../../../Assets/Styles/Bundle.scss";
+
+
+.ActorListContainer {
+    font-family: $twFont;
+
+    figure {
+        margin: 0;
+        padding: 1%;
+        display: grid;
+        grid-template-columns: 30% 55% 15%;
+        width: 100%;
+        height: 100%;
+
+        
+        figcaption {
+            @include nl2br;
+            padding-left: 4%;
+            padding-right: 1%;
+            
+            h2 {
+                text-transform: uppercase;
+                font-weight: 400;
+            }
+
+            p {
+                color: $mainColor;
+            }
+        }
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .goBtn {
+        @include goBtn;
+        margin-bottom: 1em;
+        flex-direction: column;
+        height: 100%;
+        
+        button {
+            background-color: $thirdColor; 
+        }
+    }
+
+}
+.nl2br {
+    @include nl2br;
+}
+

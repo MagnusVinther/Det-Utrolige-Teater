@@ -1,9 +1,13 @@
-
+//Hooks
 import { useForm } from 'react-hook-form';
+import { useState } from 'react';
+//Komponenter
 import { Layout } from '../../App/Layout/Layout';
 import { useAuth } from '../../App/Auth/Auth';
-import { useState } from 'react';
+//Fetch
 import axios from 'axios';
+//Styles
+import Styles from "./Login.module.scss"
 
 // Function Component til "Login"
 export const Login = () => {
@@ -65,48 +69,54 @@ export const Login = () => {
 
     return (
         // Layout komponent
-        <Layout title="Login" description="Her kan du logge ind">
+        <Layout title="Login" description="Her kan du logge ind" hidetitle="true">
             {/* ternary operator til at vise login-form, hvis man IKKE er logget ind */}
             {!loginData && !loginData.username ?
             (
-                // Onsubmit event med Closure. ( Når en funktion tilgår/bruger variabler defineret uden for den )
-                <form onSubmit={handleSubmit(sendLoginRequest)}>
 
-                    {/* Div til brugernavnsfelt, samt fejlvisning */}
-                    <div>
-                        <label htmlFor="username">Brugernavn: </label>
-                        <input type="text" id="username" placeholder="indtast Brugernavn"
-                        // React-hook-form registrerer "username" og kræver dens tilstedeværelse
-                        {...register("username", {required: true})} />
-                        {/* Hvis ikke den kan finde brugernavn i feltet udskrives en fejlmeddelelse */}
-                        {errors.username && (
-                            <span>Du skal indtaste brugernavn...</span>
+                <div className={Styles.formContainer}>
+
+                    <h1>Login side</h1>
+                    {/* // Onsubmit event med Closure. ( Når en funktion tilgår/bruger variabler defineret uden for den ) */}
+                    <form className={Styles.loginForm} onSubmit={handleSubmit(sendLoginRequest)}>
+
+                        {/* Div til brugernavnsfelt, samt fejlvisning */}
+                        <div>
+                            <label htmlFor="username">Brugernavn: </label> <br />
+                            <input type="text" id="username"
+                            // React-hook-form registrerer "username" og kræver dens tilstedeværelse
+                            {...register("username", {required: true})} />
+                            {/* Hvis ikke den kan finde brugernavn i feltet udskrives en fejlmeddelelse */}
+                            {errors.username && (
+                                <span className={Styles.errorMessage}>Du skal indtaste brugernavn...</span>
+                            )}
+                        </div>
+
+                        <div>
+                            <label htmlFor="password">Adgangskode: </label> <br />
+                            <input type="password" id="password"
+                            {...register("password", {required: true})} />
+                            {errors.password && (
+                                <span className={Styles.errorMessage}>Du skal indtaste adgangskode...</span>
+                            )}
+                        </div>
+
+                        {errMes && (
+                            <div>{errMes}</div>
                         )}
-                    </div>
 
-                    <div>
-                        <label htmlFor="password">Adgangskode: </label>
-                        <input type="password" id="password" placeholder="indtast Adgangskode"
-                        {...register("password", {required: true})} />
-                        {errors.password && (
-                            <span>Du skal indtaste adgangskode...</span>
-                        )}
-                    </div>
-
-                    {errMes && (
-                        <div>{errMes}</div>
-                    )}
-
-                    <button>Log Ind</button>
-                </form>
-
+                        <button>Log Ind</button>
+                    </form>
+                </div>                            
             // Ternary operator "else"
             ) : (
 
             // Viser dette hvis man er logget ind
-            <div>
-                <p>Du er logget ind som {loginData.username}</p>
-                <button onClick={LogOut}>Log ud</button>
+            <div className={Styles.formContainer}>
+                <div className={Styles.logOutContainer}>
+                    <p>Du er logget ind som <b>{loginData.username}</b></p>
+                    <button className={Styles.logOutBtn} onClick={LogOut}>Log ud</button> 
+                </div>
             </div>
 
             )}

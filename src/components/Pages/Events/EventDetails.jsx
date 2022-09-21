@@ -1,9 +1,10 @@
 import axios from "axios"
 import { useEffect, useState } from "react"
-import { useParams } from "react-router-dom"
+import { Link, useParams } from "react-router-dom"
 import { Layout } from "../../App/Layout/Layout"
 import Styles from "./EventDetails.module.scss"
 import { EventActors } from "./EventActors"
+
 
 
 export const EventDetails = () => {
@@ -33,7 +34,7 @@ export const EventDetails = () => {
     }, [event_id])
 
     return (
-        <Layout title="Skuespillere">
+        <Layout title="Event detaljer" description="Her kan man se detaljer for events" hidetitle="true">
                 {/* Ternary operator som viser side hvis der er noget at vise */}
                 {eventData ? (
                 <section className={Styles.sectionEventDetails}>
@@ -60,6 +61,9 @@ export const EventDetails = () => {
                                 
                         </figcaption>
                     </figure>
+                    <div className={Styles.goBtn}>
+                        <button><Link to={'/events'}>Se alle forestillinger</Link></button>
+                    </div>
                 </section>
                 ) : null }
         </Layout>

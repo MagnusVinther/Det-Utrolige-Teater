@@ -1,8 +1,11 @@
 // Hooks, react
 import { useEffect } from 'react'
 
+import Styles from "./Layout.module.scss"
+
 // Function Component til side-hovede layout, med props property (kan hedde hest)
 const Layout = props => {
+    const hidetitle = (props.hidetitle) ? props.hidetitle : false;
     // UseEffect til at styre rendering. Renderer når dependency array fanger en ændring
     useEffect(() => {
         // dokument titel
@@ -21,10 +24,12 @@ const Layout = props => {
     return (
         //React fragment som top-level element
         <>
-            <section>
-                {/* indsætter fremover descendants/children i tilhørende placering */}
-                {props.children}
-            </section>
+            {!props.hidetitle &&
+                <h1 className={Styles.MainHeaders}>{props.title}</h1>
+            }
+            {/* indsætter fremover descendants/children i tilhørende placering */}
+            <section>{props.children}</section>
+            
         </>
     )
 }

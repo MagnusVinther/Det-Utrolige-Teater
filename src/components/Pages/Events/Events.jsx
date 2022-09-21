@@ -1,7 +1,10 @@
+import { EventList } from "./EventList"
 
 
 export const Events = () => {
     return (
-        <h1>Events</h1>
+        <>
+            <EventList />
+        </>
     )
 }

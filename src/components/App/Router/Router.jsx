@@ -5,12 +5,11 @@ import { Routes, Route } from 'react-router-dom'
 import { Home } from "../../Pages/Home/Home"
 import { Events } from "../../Pages/Events/Events"
 import { EventDetails } from '../../Pages/Events/EventDetails'
-import { Content } from '../../Pages/Content/Content'
-import { ContentDetails } from '../../Pages/Content/ContentDetails'
-import { ContentList } from '../../Pages/Content/ContentList'
+import { Actors } from '../../Pages/Actors/Actors'
+import { ActorDetails } from '../../Pages/Actors/ActorDetails'
 import { Login } from '../../Pages/Login/Login'
-import { AdminPage } from '../../Pages/Admin/AdminPage'
-import { AdminControl } from '../../Pages/Admin/AdminControl'
+// import { AdminPage } from '../../Pages/Admin/AdminPage'
+// import { AdminControl } from '../../Pages/Admin/AdminControl'
 
 // Function Component til styring af pages og pathing
 export const AppRouter = () => {
@@ -21,6 +20,11 @@ export const AppRouter = () => {
                 <Route index element={<Events />}></Route>
                 <Route path=":event_id" element={<EventDetails />}></Route>
             </Route>
+            <Route path="/actors">
+                <Route index element={<Actors />}></Route>
+                <Route path=":actor_id" element={<ActorDetails />}></Route>
+            </Route>
+            <Route path='/login' element={<Login />}></Route>
 
             {/* Content er igen en placeholder for en side hvori der skal laves api kald */}
             {/* <Route path='/content'>
@@ -30,7 +34,7 @@ export const AppRouter = () => {
                     <Route path='*2' element={<ContentDetails />}></Route>
                 </Route>
             </Route>
-            <Route path='/login' element={<Login />}></Route>
+            
             <Route path='/admin' element={<AdminPage />}></Route>
             <Route path="/admin/:comment_id" element={<AdminControl />}></Route> */}
         </Routes>

@@ -8,7 +8,7 @@ import { HomeCards } from "./HomeCards"
 
 export const Home = () => {
     return (
-        <Layout title="Forside" description="Her er forsiden">
+        <Layout title="Forside" description="Her er forsiden" hidetitle={true}>
 
             <HomeBanner />
             <HomeCards />
