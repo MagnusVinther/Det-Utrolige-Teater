@@ -49,3 +49,21 @@
     @include nl2br;
 }
 
+@media screen and (max-width: 800px ) {
+    .ActorListContainer {
+
+        figure {
+            
+            grid-template-rows: 50% 30% 15%;
+            grid-template-columns: auto;
+
+            img {
+                height: 100%;
+                width: auto;
+                margin: 0 auto;
+                outline: .5em solid $mainColor;
+                outline-offset: -.5em;
+            }
+        }
+    }
+}

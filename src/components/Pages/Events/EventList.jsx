@@ -45,7 +45,7 @@ const EventListItem = props => {
                             <p>{props.data.stage_name}</p>
                             <b>{props.data.startdate} - {props.data.stopdate}</b>
                         </div>
-                        <div>
+                        <div className={Styles.btnDiv}>
                             <button className={Styles.btnRead}><Link to={`/events/${props.data.id}`}>læs mere</Link></button>
                             <button className={Styles.btnBuy}><Link to={`/events/${props.data.id}/booking`}>køb billet</Link></button>
                         </div>

@@ -41,7 +41,7 @@ export const MyPage = () => {
                     if(result.data.items) {
                         // reverse funktion laver omvendt rækkefølge i udtræk. (closure?)
                         setReservationData(result.data.items.reverse())
-                        console.log(result.data.items)
+                        console.log(result.data)
                     }
             }
             // Fortæller hvor fejlen sker.
@@ -56,6 +56,21 @@ export const MyPage = () => {
         }
     // Dependency array som fortæller at der først skal renderes når der sker en ændring i access token eller i forhold til indholdet
     }, [loginData.access_token, event_id]) // event_id relativt til hvad man leder efter. !!
+
+    // const getReservationList = async (reservation_id) => {
+    //     const options = {
+    //         headers: {
+    //             Authorization: `Bearer ${loginData.access_token}`
+    //         }
+    //     }
+
+    //     const endpoint = `https://api.mediehuset.net/detutroligeteater/reservations/${reservation_id}`
+    //     const result = await axios.get(endpoint, options)
+
+    //     if(result.status && loginData.access_token) {
+    //         getReservationList()
+    //     }
+    // }
 
     // Delete metode
     const deleteReservation = async (reservation_id) => {
@@ -101,7 +116,7 @@ export const MyPage = () => {
                 <tr key={item.id}>
                 {/* <input type="hidden" name="event_id" value={event_id}></input> */}
 
-            {/* <td>{item.}</td> */}
+            <td>{item.event_title}</td>
                 
             <td> {/* table data-cell */}
                 {/* icon/knap til at redigerer */}

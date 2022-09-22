@@ -3,6 +3,7 @@ import { NavBar } from "./NavBar"
 import Styles from "./Header.module.scss"
 import logo from "../../Assets/Images/Logo.png"
 import { Link } from "react-router-dom"
+import { BurgerMenu } from "../App/BurgerMenu/BurgerMenu"
 
 export const Header = () => {
     return (
@@ -12,9 +13,8 @@ export const Header = () => {
         </Link>
         
         <NavBar />
-        <div className="searchFloater">
-
-        </div>
+        
+        <BurgerMenu />
       </header>
     )
 }

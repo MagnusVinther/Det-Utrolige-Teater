@@ -9,6 +9,7 @@ import { Actors } from '../../Pages/Actors/Actors'
 import { ActorDetails } from '../../Pages/Actors/ActorDetails'
 import { Login } from '../../Pages/Login/Login'
 import { EventBooking } from '../../Pages/Booking/EventBooking'
+import { BookingConfirm } from '../../Pages/Booking/BookingConfirm'
 // import { AdminPage } from '../../Pages/Admin/AdminPage'
 // import { AdminControl } from '../../Pages/Admin/AdminControl'
 
@@ -21,6 +22,7 @@ export const AppRouter = () => {
                 <Route index element={<Events />}></Route>
                 <Route path=":event_id" element={<EventDetails />}></Route>
                 <Route path=":event_id/booking" element={<EventBooking />}></Route>
+                <Route path=":event_id/booking/:reservation_id" element={<BookingConfirm />}></Route>
             </Route>
             <Route path="/actors">
                 <Route index element={<Actors />}></Route>

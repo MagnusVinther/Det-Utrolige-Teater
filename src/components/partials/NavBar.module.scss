@@ -2,6 +2,7 @@
 
 
 .navContainer {
+    width: 100%;
     display: flex;
     justify-content: flex-end;
     
@@ -30,5 +31,12 @@
                 
             }
         }
+    }
+
+}
+
+@media screen and (max-width: 800px ) {
+    .navContainer {
+        display: none;
     }
 }

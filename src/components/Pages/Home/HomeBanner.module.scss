@@ -70,3 +70,13 @@
         }
     }
 }
+
+@media screen and (max-width: 800px ) {
+    .sectionBanner {
+        
+        figure {
+            display: flex;
+            flex-direction: column-reverse;
+        }
+    }
+}

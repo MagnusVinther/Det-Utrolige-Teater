@@ -9,3 +9,12 @@
   background-color: white;
   margin: 0 auto;
 }
+
+html, body {
+  width: 100%;
+}
+@media screen and (max-width: 800px ) {
+  .App {
+    width: 90%;
+  }
+}

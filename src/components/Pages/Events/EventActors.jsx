@@ -22,7 +22,7 @@ export const EventActors = () => {
             return (
                 <figure key={item.id} className={Styles.actorCard}>
                     <Link to={`/actors/${item.id}`}>
-                        <img src={item.image} alt="#" />
+                        <img src={item.image} alt={item.name} />
                     </Link>
                     <figcaption>
                         <h2>{item.name}</h2>

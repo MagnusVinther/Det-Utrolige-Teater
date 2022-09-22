@@ -38,3 +38,21 @@
     }
 }
 
+@media screen and (max-width: 800px ) {
+
+    .actorGallery {
+        display:grid;
+        grid-template-columns: auto auto auto;
+
+        .actorCard {
+            width: 100%;
+            display: flex;
+            
+            img {
+                width: 100%;
+            }
+        }
+    }
+
+}
+

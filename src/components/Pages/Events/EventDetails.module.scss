@@ -83,3 +83,28 @@
     }
 
 }
+
+@media screen and (max-width: 800px ) {
+
+    .sectionEventDetails {
+
+        h1 {
+            font-size: 8vw;
+        }
+
+        p {
+            font-size: 4vw;
+        }
+
+        h3 {
+            font-size: 7vw;
+        }
+
+        .articleHeader {
+            
+            b {
+                font-size: 3vw;
+            }
+        }
+    }
+}

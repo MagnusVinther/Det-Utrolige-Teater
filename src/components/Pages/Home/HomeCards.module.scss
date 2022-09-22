@@ -126,3 +126,20 @@
         }
     }
 }
+
+@media screen and (max-width: 800px ) {
+
+    
+    .sectionCards {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin: 0;
+        
+        figure {
+            width: 100%;
+            margin-bottom: 1em;
+            
+        }
+    }
+}

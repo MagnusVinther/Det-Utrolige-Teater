@@ -7,7 +7,7 @@ import { Layout } from "../../App/Layout/Layout"
 import { Login } from "../Login/Login"
 import { EventBookingForm } from "./EventBookingForm"
 import Styles from "./EventBooking.module.scss"
-import { Seats } from "./EventBookingSeats"
+// import { Seats } from "./EventBookingSeats"
 
 export const EventBooking = () => {
     const { loginData } = useAuth()
