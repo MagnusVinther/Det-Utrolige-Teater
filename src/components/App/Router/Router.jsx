@@ -8,6 +8,7 @@ import { EventDetails } from '../../Pages/Events/EventDetails'
 import { Actors } from '../../Pages/Actors/Actors'
 import { ActorDetails } from '../../Pages/Actors/ActorDetails'
 import { Login } from '../../Pages/Login/Login'
+import { EventBooking } from '../../Pages/Booking/EventBooking'
 // import { AdminPage } from '../../Pages/Admin/AdminPage'
 // import { AdminControl } from '../../Pages/Admin/AdminControl'
 
@@ -19,6 +20,7 @@ export const AppRouter = () => {
             <Route path="/events">
                 <Route index element={<Events />}></Route>
                 <Route path=":event_id" element={<EventDetails />}></Route>
+                <Route path=":event_id/booking" element={<EventBooking />}></Route>
             </Route>
             <Route path="/actors">
                 <Route index element={<Actors />}></Route>

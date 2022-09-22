@@ -33,11 +33,25 @@
     .formInput {
         font-size: 1.5vw;
         padding: .7%;
-
     }
 
     b {
         text-transform: capitalize;
+    }
+    .loginHeader {
+        display: flex;
+        margin: auto 0;
+        justify-content: space-between;
+        align-items: center;
+        text-align: right;
+        p {
+            margin-bottom: .5em;
+            color: $greyFont;
+        }
+        button {
+            margin-top: .5em;
+            background-color: $mainColor;
+        }
     }
 }
 .errorMessage {

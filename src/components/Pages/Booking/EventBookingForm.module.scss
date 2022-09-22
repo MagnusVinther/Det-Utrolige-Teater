@@ -1,0 +1,34 @@
+@import "../../../Assets/Styles/Bundle.scss";
+
+.bookingForm {
+    width: 100%;
+    .formDiv {
+        width: 40%;
+        outline: 1px solid $mainColor;
+        display: flex;
+        margin: 2%;
+
+    }
+    
+    label, input {
+        padding: 3%;
+        margin: .5%;
+        width: 50%;
+    }
+
+    button {
+        @include btnCards;
+        background-color: $thirdColor;
+        margin-top: 1em;
+    }
+
+    span {
+        display: flex;
+        color: red;
+        justify-content: flex-end;
+        margin: .2em;
+        padding-right: 2%;
+        width: 100%;
+
+    }
+}

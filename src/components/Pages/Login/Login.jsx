@@ -8,6 +8,7 @@ import { useAuth } from '../../App/Auth/Auth';
 import axios from 'axios';
 //Styles
 import Styles from "./Login.module.scss"
+import { MyPage } from './MyPage';
 
 // Function Component til "Login"
 export const Login = () => {
@@ -78,7 +79,7 @@ export const Login = () => {
 
                     <h1>Login side</h1>
                     {/* // Onsubmit event med Closure. ( Når en funktion tilgår/bruger variabler defineret uden for den ) */}
-                    <form className={Styles.loginForm} onSubmit={handleSubmit(sendLoginRequest)}>
+                    <form onSubmit={handleSubmit(sendLoginRequest)} className={Styles.loginForm}>
 
                         {/* Div til brugernavnsfelt, samt fejlvisning */}
                         <div>
@@ -113,10 +114,15 @@ export const Login = () => {
 
             // Viser dette hvis man er logget ind
             <div className={Styles.formContainer}>
-                <div className={Styles.logOutContainer}>
-                    <p>Du er logget ind som <b>{loginData.username}</b></p>
-                    <button className={Styles.logOutBtn} onClick={LogOut}>Log ud</button> 
+                <div className={Styles.loginHeader}>
+                    <h1>Min Side</h1>
+                    <div className={Styles.logOutContainer}>
+                        <p>DU ER LOGGET IND PÅ <b style={{textTransform:'uppercase'}}>{loginData.username}</b></p>
+                        <button className={Styles.logOutBtn} onClick={LogOut}>Log ud</button> 
+                    </div>
                 </div>
+                <MyPage />
+                
             </div>
 
             )}

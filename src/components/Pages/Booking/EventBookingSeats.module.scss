@@ -1,0 +1,10 @@
+@import "../../../Assets/Styles/Bundle.scss";
+
+
+.seatsContainer {
+    outline: none;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    margin: 0 auto;
+    width: 80%;
+}

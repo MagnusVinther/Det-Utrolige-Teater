@@ -53,7 +53,7 @@ export const HomeCards = () => {
                                 </div>
                                 <div className={Styles.btnContainer}>
                                     <button className={Styles.btnRead}><Link to={`/events/${item.id}`}>læs mere</Link></button>
-                                    <button className={Styles.btnBuy}>køb billet</button>
+                                    <button className={Styles.btnBuy}><Link to={`/events/${item.id}/booking`}>køb billet</Link></button>
                                 </div>
                             </article>
                         </figcaption>

@@ -47,7 +47,7 @@ const EventListItem = props => {
                         </div>
                         <div>
                             <button className={Styles.btnRead}><Link to={`/events/${props.data.id}`}>læs mere</Link></button>
-                            <button className={Styles.btnBuy}>køb billet</button>
+                            <button className={Styles.btnBuy}><Link to={`/events/${props.data.id}/booking`}>køb billet</Link></button>
                         </div>
                     </figcaption>
                 </figure>
