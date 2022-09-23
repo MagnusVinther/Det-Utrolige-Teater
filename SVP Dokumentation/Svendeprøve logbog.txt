@@ -1,0 +1,82 @@
+
+Første dag:
+Møde klokken 8:15 på skolen hvor der var gennemgang af opgaven, samt hvor man kunne få svaret på nogle generelle spørgsmål.
+
+Mål for dag 1: (påbegyndt klokken 13:00)
+- opsætning af github
+	- nyt repo
+	- opsætning af template 
+- opsætning af zenhub
+	- planlægning for ugen.
+- Endnu en gennemgang af opgavebeskrivelsen
+- Forhåbentligt få lavet <Header> samt <Footer>
+
+- Ved indgang og udgang af dagen tages billede af Scrum-board samt føres logbog af dagen.
+
+Dag 1 resume: (Afsluttet efter godt 5 timers arbejde)
+Jeg har, på trods af afbrydelser i mit arbejde, har jeg formået at klarer de opgaver jeg satte mig for ved dagens begyndelse. Jeg mangler nogle finishing touches på både header og footer, men jeg vil skønne dem til at være 90% færdig.
+Udfordringerne idag har været at få min template til at samarbejde således at jeg kunne opstarte et projekt, samt positionering af elementer i header og nav - det vil altid være et af de mere tricky komponenter på en side - flex-direction: column-reverse; var idag den største befrielse at finde.
+Der har været meget skrive arbejde i dag i forhold til mit scrumboard, planlægning og logbog, da jeg håber på at disse vil gøre mit fremadrettede arbejde betydeligt lettere. 
+Én af de ting jeg gør mig brug af, er kommentarfeltet på de issues jeg har oprettet på mit scrumboard, til at skabe noget overblik over opgaven, så jeg holder mig på rette sti.
+
+________________________________________
+
+Tirsdag:
+Dagen startede klokken 13:30, da jeg har haft ansvar for at passe mit barn på (idag) 1 måned indtil da. Mit udgangspunkt for dagen er at jeg som det mindste skal have lavet min forside færdig, så småt få færdiggjort noget styling på header og footer, og eventuelt smide en burgermenu ind med media-queries. Derudover er planen at se hvor langt jeg kan komme henover de næste 8 timer.
+
+mål for tirsdag:
+- Forside færdiggjort.
+- Header og Footer færddiggjort med styling og links på ikoner.
+- Burgermenu
+
+Tirsdag resume: 8 timers arbejde
+På trods af baby-tjans til godt efter middag, har jeg alligevel formået at gøre min forside "så-godt-som" færdig. Der er en forside-banner, 3 cards som viser tilfældige events samt en knap som fører til "alle-forestillinger". Styling vil jeg sætte et flueben ved, da mere arbejde på det ikke vil gavne processen, da der er vigtigere ting at tage sig af. Jeg fik derudover også lavet et godt ryk ind på min events side - jeg mangler nu anmeldelser på events siden - men det vil jeg først tage mig af når jeg har fået min login-side på plads. Jeg har i kampens hede glemt alt om mit mål vedrørende burgermenu - det må jeg gøre en anden gang.
+Udfordringerne for i dag har hovedsageligt været style-mæssige. Jeg brugte derudover også en time-halvanden på at lave en "work-around" på de manglende "medvirkende" på events-detalje siden - det viste sig så at jeg ikke havde læst dokumnetationen ordenligt igennem, og fandt api dataen for medvirkende lige dér hvor de hele tiden havde været.
+_______________________________________________
+
+Onsdag:
+Dagen starter klokken 12 (sent i seng + "nattevagt"). Jeg er startet ud med at lave nogle issues på min ZenHub (Scrumboard), da jeg tænker at det vil give lidt mere overblik. Det drejer sig om at få Navbar til at vise hvilken side man befinder sig på, Events-sidens Favourite-knap samt konvertering af datoer (måske også pris med andre seperatorer) - ikke at det er super vigtigt, men det kunne være fint at få med i sidste ende. Jeg har derudover også flyttet Header og Nav tilbage i min nye pipeline "Finishing touches / styling" på baggrund af overnævnte issues.
+Planen for idag er at få gjort Events- og skuespillersiden færdig og så rykke ind på at få lavet min loginside - jeg har aftalt med mig selv at jeg skal holde stylingen fra at tage alt min tid, da der stadig er mange komponenter som skal laves - og så må jeg færdiggøre styling senere hvis jeg får tid til det.
+
+Oversigt over mål for onsdag:
+- Events side (uden anmeldelser)
+	- Events detaljer
+- Skuespiller side
+	- Skuespiller detaljer
+- Login/Logged in-sider
+- Admin-side.
+
+Onsdag resume: 7 timers arbejde.
+Overordnet set, er jeg rigtig glad for det stykke arbejde jeg fik lavet idag. Målene for i dag blev næsten alle fuldført, på nær "admin-side". Jeg kan nu med halv-god samvittighed sige at skuespiller siden samt events siden er så godt som færdige - dog på nær mulighed for at købe billet og at anmelde. De to komponenter tager jeg fat i, i morgen.
+Den største udfordring for mig, har IGEN været at kunne give slip på styling før at det spiller 100%. Jeg erkender at jeg bruger alt for meget tid på at lave styling, og for lidt tid på at færdiggøre de vigtige komponenter. Den udfordring har jeg ikke råd til at hive med mig igennem torsdag - da jeg håber på at kunne gøre siden så-godt-som færdig dér, således at jeg har fredag til at fokuserer på at skrive rapport.
+___________________________________________________
+
+Torsdag:
+Klokken er 10:51 og jeg er nu gået igang med dagens første gøremål, som er at skrive i min logbog - det er efterhånden  blevet lidt af en tradition.
+Jeg har en travl og lang dag foran mig, da jeg har gemt alle de vanskelige komponenter til sidst. Jeg har lavet en regl for mig selv idag som hedder at udskyde styling til jeg har fået alle komponenterne på plads - da det er vigtigt for mig, at få alt funktion med på siden. Jeg har fortalt mig selv at jeg allerede har vist at jeg kan finde ud af at style, så det vil jeg idag tage det med ro med. Derudover skal jeg også være bedre til at committe oftere, da jeg ikke kan få alt jeg laver med i commit-title...
+
+oversigt over mål for torsdag:
+- Admin-panel
+- Billetkøbs side (samt booking)
+	- bekræftigelses side
+- anmeldelser på events
+- Favourite button
+- burgermenu
+
+Torsdag resume: 10 timers arbejde
+Sidste dag inden aflevering - meget vanskelig dag. 
+Sejre idag: Jeg fik brugt post-metoden, den virker - men det kan man kun se med console.log. Jeg har fået gjort sitet rimlig responsivt - glad for at det ikke tog alt for langt tid. Jeg fik lavet en flot formData som jeg også er glad for - ikke fordi at det har været så vanskeligt, men har bare været rimlig omfattende. Jeg får udtræk på min-side i forhold til reservationer.. Det er ikke de helt rigtige data, men det er et skridt hen af vejen.
+Udfordringer idag:
+Reservationerne i det hele taget har været en kæmpe udfordring - der er mange bolde i luften, og postman gad ikke at samarbejde. Jeg har haft alt for mange ting, som skyldes at jeg måske har brugt for meget tid på styling de sidste par dage, som jeg nu føler går ud over sidens funktionalitet. 
+Stædighed har også været en udfordring idag - jeg BURDE have taget et valg om at lave en "lettere" post metode, ved at gå igang med anmeldelser - men nu var jeg jo igang med at lave post på reservationer, og det endte jeg så med at bruge størstedelen af dagen på, uden rigtig at komme helt i mål.
+Jeg fik vidst også overvurderet min egen kunnen på starten af dagen, og fik "kun" sat flueben ved booking og burgermenu. 
+Dagen i morgen forventer jeg, udelukkende, at bruge på at skrive kommentarer til den kode jeg vil beholde og skrive rapport (nok nærmere i omvendt rækkefølge).
+
+__________________________________________________
+Fredag: Sidste dag
+Captains log day 5, ør i hovedet, ikke meget søvn, sent i seng, halvanden times babytjans i nat - nu skal der ryddes op og skrives en rapport. Vågnede op med et Eureka-moment, hvor det gik op for mig at jeg selvfølgelig ikke kunne få de fucking lorte reservationer over til min loginside fordi at jeg ikke har lavet en contextprovider til den - havde det gået op for mig igår havde jeg nok sparret migselv flere timers arbejde i forsøg på at lave en workaround, der aldrig ville kunne work'e around problemet.
+Jeg skal have fjernet unødvendige filer og mapper så det ikke ser så mega roddet ud. Jeg skal have skrevet en tæskegod rapport, og så affinde mig med at jeg ikke fik gjort opgaven 100% færdig. 
+Resume: Dagens store foreskrækkelse var da min computer pludseligt gik i sortskærm med 45 minutter til aflevering.. så jeg måtte tvinge genstart - jeg så mit liv passere revy... Dog kan jeg prise mig lykkelig over at mit word dokument havde en restore funktion, som gjorde at jeg ikke mistede noget arbejde!! Jeg er rimlig godt tilfreds med min Rapport - er lidt hurtigt ude med resume'et da jeg stadig ikke har ryddet helt op - men det havde jeg forventet lidt. Jeg må bruge den næste halve time på at rydde op i mit projekt, affinde mig med at jeg ikke fik kommenteret det sidste af min kode, som jeg har skrevet i komplet kaos igår, og så bare få sendt den her fugl til gilde.
+
+
+

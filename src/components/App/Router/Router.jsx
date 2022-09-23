@@ -10,8 +10,6 @@ import { ActorDetails } from '../../Pages/Actors/ActorDetails'
 import { Login } from '../../Pages/Login/Login'
 import { EventBooking } from '../../Pages/Booking/EventBooking'
 import { BookingConfirm } from '../../Pages/Booking/BookingConfirm'
-// import { AdminPage } from '../../Pages/Admin/AdminPage'
-// import { AdminControl } from '../../Pages/Admin/AdminControl'
 
 // Function Component til styring af pages og pathing
 export const AppRouter = () => {
@@ -29,18 +27,7 @@ export const AppRouter = () => {
                 <Route path=":actor_id" element={<ActorDetails />}></Route>
             </Route>
             <Route path='/login' element={<Login />}></Route>
-
-            {/* Content er igen en placeholder for en side hvori der skal laves api kald */}
-            {/* <Route path='/content'>
-                <Route index element={<Content />}></Route>
-                <Route path='*1'>
-                    <Route index element={<ContentList />}></Route>
-                    <Route path='*2' element={<ContentDetails />}></Route>
-                </Route>
-            </Route>
             
-            <Route path='/admin' element={<AdminPage />}></Route>
-            <Route path="/admin/:comment_id" element={<AdminControl />}></Route> */}
         </Routes>
     )
 }
